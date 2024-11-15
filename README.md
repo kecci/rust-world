@@ -113,3 +113,17 @@ Assuming everything went well, you should see your application print this to the
 
 ## Learn more
 - https://www.rust-lang.org/learn
+
+## VS Code rust-analyzer extension
+After install the extension, you should set the path runnable for debugging in vs code.
+```
+...
+    "rust-analyzer.server.extraEnv": {
+      "CARGO": "/Users/abyankecci/.cargo/bin/cargo",
+      "RUSTC": "/Users/abyankecci/.cargo/bin/rustc"
+    },
+    "rust-analyzer.runnables.extraEnv": {
+        "PATH": "/Users/abyankecci/.cargo/bin"
+    }
+...
+```
